@@ -1,0 +1,553 @@
+/* Estilo del body general de todas las páginas */
+
+* {
+    box-sizing: border-box;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+body {
+    background: url(../media/site-background.png) no-repeat fixed center top;
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    /* min-height: 270vh; */
+    position: relative;
+    padding-bottom: 200px;
+} 
+
+/* Estilo del Header de todas las páginas */
+
+#banner {
+    width: 100%;
+    height: 300px;
+}
+
+h1 span {
+    text-emphasis: triangle;
+    text-decoration: solid underline;
+}
+
+h1 {
+    margin: 8%;
+    background-color: #31A87D;
+    opacity: 90%;    
+    border-radius: 10px;
+}
+
+/* Estilo del nav de todas las páginas */
+
+.navList li {
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Libre Baskerville, serif;
+    font-size: larger;
+    border-width: 5px;; 
+    margin: 0;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+    
+}
+
+.navList {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    opacity: 80%;    
+    border-radius: 10px;
+}
+
+
+/* Clases para fuentes y modificadores de texto y bloque */
+
+.relative {
+    position: relative;
+}
+
+.centerAlign{
+    text-align: center;
+}
+
+.fuente1 {
+    font-family: Libre Baskerville, serif;
+    font-size: larger;
+}
+
+.fuente2{
+    /* -webkit-text-stroke: 0.5px orangered; */
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    /* color: black; */
+    text-align: center;
+}
+
+.fuente3 {
+    font-family: Libre Baskerville, serif;
+    font-size: smaller;
+}
+
+.fuente4 {
+    -webkit-text-stroke: 2px #C78F95;
+    font-family: 'Playfair Display', serif;
+    font-size: 600%;
+    color: #AD3319;
+    text-align: center;
+}
+
+.fuente5 {
+    font-family: Libre Baskerville, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: forestgreen;
+}
+
+.fuente6 {
+    font-family: Libre Baskerville, serif;
+    font-size: larger;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.fuente7{
+    /* -webkit-text-stroke: 0.5px orangered; */
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.subtitulo {
+    border-bottom: solid;
+}
+
+.subtitulo2 {
+    border-bottom: black double;
+}
+
+.subtitulo3 {
+    border-bottom: white solid;
+    border-width: 5px;
+}
+
+.estiloFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.estiloFlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.noMarginTop {
+    margin-top: 0%;
+}
+
+/* modificador de bloque de la página principal */
+
+#bienvenida {
+    margin: 8%;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgb(168, 218, 218);
+    border-color: orangered;
+    opacity: 80%;    
+}
+
+.indexMain {
+    display: grid;
+    grid-template-areas: 
+    "sinopsis openings"
+    "sinopsis openings";    
+}
+
+.openings {
+    grid-area: openings;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#sinopsis {
+    grid-area: sinopsis;
+    margin: 6% 6%;
+    background-color: whitesmoke;
+    border-style: double;
+    border-color: orange;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+#sinopsis span {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* modificadores de la página mugiwaras */
+
+/* Texto superior */
+
+#mugis {
+    margin: 4%;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgb(168, 218, 218);
+    border-color: orangered;
+    opacity: 80%;    
+}
+
+#mugis p span {
+    text-decoration: underline;
+}
+
+/* Modificadores de la tabla */
+
+.container {
+    justify-items: center;
+    max-width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px 10px; 
+  }
+
+.container div {
+    font-family: Libre Baskerville, serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.container div h3 {
+    text-align: center;
+}
+
+.container div ul {
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: none;
+}
+
+.container div ul li {
+    margin-top: 10px;    
+}
+
+
+
+/* modificadores de los bloques de la página Historia */
+
+#construccion {
+    margin: 4%;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+#construccion img {
+    height: 100px;
+    min-width: 100px;
+}
+
+
+/* modificadores de los bloques de la página Marina */
+
+#marina {
+    margin: 4%;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgb(168, 218, 218);
+    border-color: orangered;
+    opacity: 80%;    
+}
+
+#listaRangos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 8%;
+    background-color: whitesmoke;
+    border-style: double;
+    border-color: powderblue;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+#rangosMarine {
+    
+    width: 100%;
+}
+
+#marines {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 8%;
+    background-color: whitesmoke;
+    border-style: double;
+    border-color: powderblue;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+.containerMarina {  
+    display: grid;
+    grid-template-rows: repeat(17, 1fr);
+    gap: 30px 0px;
+    grid-auto-flow: row;
+    
+  }
+
+  .marine {
+    display: grid;
+    max-height: 300px;
+    grid-template-columns: 1fr 4fr;
+    margin: 5% 0;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: powderblue;
+    border-radius: 20px;
+  }
+
+  .marine div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+  .marine img {
+    border-radius: 20px ;
+    height: 294px;
+  } 
+
+.marine div h4 {
+    margin: 10px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.marine div p {
+    font-family: Libre Baskerville, serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: forestgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+/* modificadores de los bloques de la página de otros piratas */
+
+#otrosPiratas {
+    margin: 4%;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgb(168, 218, 218);
+    border-color: orangered;
+    opacity: 80%;    
+}
+
+.yonkoIntro {
+    margin: 4%;
+    padding: 10px;    
+    border-radius: 20px;    
+    background-color: black;
+    color: white;
+}
+
+.yonkoIntro p {
+    text-align: center;
+}
+
+#yonko2 {
+    margin: 4%;    
+    border-radius: 20px;    
+    background-color: black;
+    border: orange double;
+    color: white;
+}
+
+#yonko2 div {
+    padding: 5%;
+}
+
+#yonko2 div p {
+    text-align: center;
+}
+
+#yonko2 div img {
+    height: 250px;
+    border-radius: 20px;
+}
+
+#shichibukai p {
+    text-align: center;
+}
+
+.gridShiDer {
+    display: grid;
+    grid-template-areas: 
+    "foto titulo titulo"
+    "foto parrafo parrafo"
+    "foto parrafo parrafo";
+    grid-column-gap: 20px;
+}
+
+.gridShiDer img {
+    grid-area: foto;
+}
+
+.gridShiDer h3 {
+    grid-area: titulo;
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;    
+}
+
+.gridShiDer p {
+    grid-area: parrafo;   
+    align-self: center;
+    font-family: Libre Baskerville, serif;
+    font-size: 20px;
+    font-weight: 600; 
+    text-align: justify;
+}
+
+.gridShiIzq {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo foto"
+    "parrafo parrafo foto"
+    "parrafo parrafo foto";
+    grid-column-gap: 20px;
+}
+
+.gridShiIzq img {
+    grid-area: foto;
+}
+
+.gridShiIzq h3 {
+    grid-area: titulo;
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;    
+}
+
+.gridShiIzq p {
+    grid-area: parrafo;   
+    align-self: center;
+    font-family: Libre Baskerville, serif;
+    font-size: 20px;
+    font-weight: 600; 
+    text-align: justify;
+}
+
+#shichibukai {
+    margin: 10% 4% 4% 4%;    
+    border-radius: 20px;    
+    background-color: black;
+    color: white;
+}
+
+#shichibukai2 {
+    margin: 4%;    
+    border-radius: 20px;    
+    background-color: black;
+    border: orange double;
+    color: white;
+}
+
+#shichibukai2 div {
+    padding: 5%;
+}
+
+#shichibukai2 div img {
+    height: 250px;
+    border-radius: 20px;
+}
+
+#shichibukai2 h3 {
+    text-align: center;
+}
+
+
+/* modificadores de los bloques de la página de contacto */
+
+.wrapperContacto {
+    display: grid;
+    grid-template-areas:
+    "form form imagen"
+    "form form imagen"
+    "form form imagen";
+}
+
+#mainContacto {
+    grid-area: form;
+    margin: 0;    
+    border-radius: 20px;
+    border-style: groove;
+    background-color: whitesmoke;
+    opacity: 80%;
+}
+
+#formulario div {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+#comentario {
+    display: block;
+}
+
+#textArea {
+    width: 80%;
+    height: 600px;
+}
+
+.wrapperContacto aside {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperContacto aside p {
+    margin: 0;
+    border-radius: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: fit-content;
+}
+
+
+/* Estilo del footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: royalblue;
+    border-radius: 20px;
+}
+
+footer p {
+    padding-left: 5px;
+}
