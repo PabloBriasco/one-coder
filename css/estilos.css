@@ -52,6 +52,12 @@ h1 {
     
 }
 
+.navList li:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+    opacity: 100%;
+}
+
 .navList {
     margin-right: 5%;
     margin-left: 5%;
