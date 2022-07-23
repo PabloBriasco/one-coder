@@ -542,6 +542,36 @@ h1 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     width: fit-content;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-name: animacionContacto;
+}
+
+@keyframes animacionContacto {
+    0% {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    20% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 20%, rgba(1,181,234,1) 100%);
+    }
+    40% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 40%, rgba(1,181,234,1) 100%);
+    }
+    60% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 60%, rgba(1,181,234,1) 100%);
+    }
+    80% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 80%, rgba(1,181,234,1) 100%);
+    }
+    100% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%, rgba(1,181,234,1) 100%);
+    }
 }
 
 
