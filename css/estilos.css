@@ -741,3 +741,232 @@ footer p {
         height: 300px;
     }    
 }
+
+@media screen and (max-width: 630px) {
+
+    /* Modificador de display de la página "Index" */ 
+   
+    .openings {
+        display: none;
+    }
+   
+   /* Modificador del display de la página "Mugiwaras" */
+   
+    .container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 10fr; 
+        gap: 10px 0px;
+    }       
+   
+   /* Modificadores de la página "Marina" */
+   
+    #listaRangos {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #listaRangos img {
+        width: 100%;
+    }
+   
+   .containerMarina {          
+       grid-template-rows: repeat(17, 1fr);
+       grid-template-columns: 1fr;
+       gap: 30px 10px;        
+    }
+   
+   /* Modificador del display de la página "Contacto" */
+   
+   .wrapperContacto aside {
+       display: none;
+    }     
+}
+   
+@media screen and (max-width: 531px) {
+   
+    .fuente1 {
+        font-family: Libre Baskerville, serif;
+        font-size: medium;
+    }
+       
+    .fuente4 {        
+        font-size: 300%;       
+    }
+       
+    .fuente5 {
+        font-size: 10px;
+    }
+       
+    .fuente6 {
+        font-size: small;
+        line-height: 15px;
+        letter-spacing: 0.25px;
+    }
+       
+    .fuente7{
+        font-size: 100%;
+    }
+   
+    /* Modificación del Nav */
+   
+    .navList {        
+        grid-template-columns: 1fr 1fr;    
+           
+    }   
+   
+    /* Modificaciones del Header */
+   
+    #banner {        
+        height: 100px;
+    }    
+   
+    h1 {
+        margin: 10px;
+    }
+   
+   
+    /* Modificadores del index */
+   
+    #bienvenida {
+        margin: 8% 0;    
+    }
+   
+    #sinopsis {
+        margin: 0;       
+    }
+   
+    /* Modificadores de la página "Mugiwaras */
+          
+    table tr td {
+        min-width: 0;
+    }
+   
+    td ul {
+        padding: 5px;
+    }
+   
+    .imagenTabla {
+        height: 150px;
+    }
+   
+    .fondoTabla {
+        opacity: 90%;        
+    }
+   
+    /* Modificadores de la página "Historia" */
+   
+    #construccion img {
+        height: 50px;
+        width: 100px;
+        min-width: 0;
+    }
+   
+    /* Modificaciones de la página "Marina" */
+   
+    #marines div {
+        display: flex;
+        flex-direction: column;
+    }
+       
+    #marines div div {
+        display: block;
+    }
+   
+    #marines div img {
+        height: 100%;
+        width: 100%;          
+    } 
+   
+    #marines div p {
+        text-align: center;
+    }
+   
+    /* Modificaciones de la página "Otros Piratas */
+   
+    .yonkoIntro {
+        margin: 0;
+    }
+   
+    #yonko2 {
+        margin: 0;    
+        border-radius: 20px;    
+        background-color: black;
+        border: orange double;
+        color: white;
+    }
+   
+    .gridShiDer {
+        grid-template-areas: 
+        "foto titulo titulo"
+        "foto titulo titulo"
+        "parrafo parrafo parrafo"
+        "parrafo parrafo parrafo";
+        grid-column-gap: 10px;
+    }
+       
+    .gridShiDer img {
+        grid-area: foto;
+        height: 100px;
+        max-width: 150px;
+    }
+       
+    .gridShiDer h3 {
+        grid-area: titulo;
+        font-size: 75%;    
+    }
+       
+    .gridShiDer p {
+        grid-area: parrafo;   
+        font-size: 12px;
+        font-weight: 600; 
+        text-align: center;
+    }
+       
+    .gridShiIzq {
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo foto"
+        "titulo titulo foto"
+        "parrafo parrafo parrafo"
+        "parrafo parrafo parrafo";
+        grid-column-gap: 10px;
+    }
+       
+    .gridShiIzq img {
+        grid-area: foto;
+        height: 100px;
+        max-width: 150px;
+    }
+       
+    .gridShiIzq h3 {
+        grid-area: titulo;
+        font-size: 75%;    
+    }
+       
+    .gridShiIzq p {
+        grid-area: parrafo;   
+        font-size: 12px;
+        font-weight: 600; 
+        text-align: center;
+    }
+   
+   
+       
+    /* modificaciones a la página de "contacto" */
+   
+    #textArea {
+        width: 80%;
+        height: 300px;
+    }
+   
+    .navList li {
+        padding: 5px 10px;
+        font-size: smaller;        
+    }
+      
+    /* Modificaciones del footer */
+   
+    footer {
+        font-size: smaller;
+    }
+}
